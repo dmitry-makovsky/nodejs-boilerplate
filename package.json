@@ -1,0 +1,60 @@
+{
+  "name": "nodejs-boilerplate",
+  "version": "1.0.0",
+  "description": "💻Boilerplate project for Node.js with Babel, ESLint, Jest, Prettier. Airbnb configs are used as standard. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
+    "prepublishOnly": "npm run build"
+  },
+  "bin": {
+    "hexlet": "dist/bin/hexlet.js"
+  },
+  "engines": {
+    "node": ">=13"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmitry-makovsky/nodejs-boilerplate.git"
+  },
+  "keywords": [
+    "boilerplate",
+    "node",
+    "js",
+    "jest",
+    "prettier",
+    "eslint",
+    "babel",
+    "airbnb"
+  ],
+  "author": "Makovsky Dmitry",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dmitry-makovsky/nodejs-boilerplate/issues"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "homepage": "https://github.com/dmitry-makovsky/nodejs-boilerplate#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.8.3",
+    "@babel/core": "^7.8.3",
+    "@babel/node": "^7.8.3",
+    "@babel/plugin-proposal-pipeline-operator": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "babel-eslint": "^10.0.3",
+    "babel-jest": "^25.1.0",
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-babel": "^5.3.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jest": "^23.6.0",
+    "jest": "^25.1.0",
+    "jest-cli": "^25.1.0"
+  }
+}
