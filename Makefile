@@ -25,4 +25,7 @@ lint:
 publish:
 	npm publish
 
+update-deps:
+	npx npm-check-updates -u
+
 .PHONY: test
