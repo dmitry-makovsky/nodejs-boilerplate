@@ -9,7 +9,7 @@
     "prepublishOnly": "npm run build"
   },
   "bin": {
-    "hexlet": "dist/bin/hexlet.js"
+    "start": "dist/bin/index.js"
   },
   "engines": {
     "node": ">=13"
